@@ -1,0 +1,151 @@
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bill.css">
+	
+	<script>
+		function check()
+		{
+			var radio_btn=document.bill_info.bill_btn.value;
+			alert(radio_btn);
+			var choice=document.getElementById(radio_btn).value;
+			switch(radio_btn)
+			{
+				case "utility_pay" : 
+					switch(choice)
+					{
+						case "I" :
+							alert(choice);
+							break;
+						case "II" : 
+							
+							break;
+						case "III" : 
+							
+							break;
+						default :
+							alert("Select Some Value");
+							return false;
+					}
+					break;
+					
+					
+				case "Mobile_recharge" : 
+					switch(choice)
+					{
+						case "Idea_1" :
+						
+							break;
+						case "BSNL_2" : 
+							
+							break;
+						case "airtel_3" :
+						
+							break;
+						case "Jio_4" : 
+							break;
+						default :
+							alert("Select Some Value");
+							return false;
+					}
+					break;
+					
+					
+				case "DTH_Recharge" : 
+						switch(choice)
+						{
+						case "airtel_dth" : 
+								
+								break;
+
+						case "TATA SKY_dth": 
+								
+								break;
+
+						case "Videocon_dth" : 
+								
+								break;
+
+						case "ICC Cabel_dth" : 
+								
+								break;
+						}
+					break;
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="heading">
+			<center>
+<font size="6" color="blue">Welcome To Online Banking</font></center>
+		</div>
+		<br><br><br>
+	
+		<div id="bill_form">
+			<form name="bill_info" onsubmit="check();">
+		       <table id="btn" border="1px" cellpadding="3px" >
+					<tr> 
+			<th colspan="3">WHAT'S NEW</th>
+					</tr>
+					<tr>
+<td id="btn"><input type="radio" id="bill" name="bill_btn" value="utility_pay"></td>
+						<td>Utility Payments</td>
+						<td>
+							<select id="utility_pay">
+								<option id="label" value="no">--Electricity--</option>
+								<option value="I">Internet bill</option>
+								<option value="II">Water bill</option>
+								<option value="III">Transfer Funds</option>
+		</select>
+				</td>
+					</tr>
+					<tr id="alt">
+						<td id="btn"><input type="radio" id="bill" name="bill_btn" value="post_mobile"></td>
+<td>Mobile Payments</td>
+<td>
+<select id="post_mobile">
+<option  value="no">--Mobile Operator--</option>
+
+<option id="label" value="no">--All India--</option>
+
+<option value="Idea_1">Idea</option>
+
+<option value="BSNL_2">BSNL</option>
+
+<option value="Airtel_3">Airtel</option>
+
+<option value="JIO_4">JIO</option>
+
+</select>
+</td>
+</tr>
+<tr id="alt">
+						<td id="btn"><input type="radio" id="bill" name="bill_btn" value="DTH Payments"></td>
+						<td>DTH</td>
+						<td>
+							<select id="dth">
+								<option value="no" id="label">--Select Service Provider--</option>
+								<option value="airtel_dth">Airtel</option>
+								<option value="TATA SKY_dth">TATA SKY</option>
+								<option value="Videocon_dth">Videocon</option>
+								<option value="ICC CABEL_dth">ICC CABEL</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><center><input type="submit" value="Submit"></center></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+<br><br>
+
+<a href="link.html">BACK TO HOME PAGE</a>
+
+</body>
+</html>
